@@ -8,7 +8,7 @@
   padding: 15px;
   box-sizing: border-box;
   overflow: hidden;
-  background: #111;
+  background: #222222;
 }
 
 /* --- Flipbook Container --- */
@@ -18,7 +18,7 @@
 }
 
 .album-book .page {
-  background: #2a2a2a;
+  background: #fffff9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,8 +26,8 @@
 }
 
 .album-book .page-cover {
-  background: linear-gradient(45deg, #222222, #000000);
-  color: white;
+  background: linear-gradient(45deg, #ebebeb, #fcefef);
+  color: rgb(49, 49, 49);
 }
 
 .album-book .page-cover h2 {

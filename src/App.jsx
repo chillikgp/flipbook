@@ -115,7 +115,7 @@ export default function App() {
       <div className="flipbook-container">
         <HTMLFlipBook
           width={550}
-          height={733}
+          height={450}
           size="stretch"
           minWidth={315}
           maxWidth={1000}
@@ -127,18 +127,12 @@ export default function App() {
           className="album-book"
           ref={flipBook}
         >
-          {/* --- Cover Page --- */}
-          <PageCover>Your Wedding Album</PageCover>
-
           {/* --- Dynamically Generated Inner Pages --- */}
           {Array.from({ length: TOTAL_PAGES }, (_, index) => (
             <Page key={index} number={index + 1}>
               <img src={`/photos/${index + 1}.jpg`} alt={`Page ${index + 1}`} />
             </Page>
           ))}
-
-          {/* --- Back Cover --- */}
-          <PageCover>The End</PageCover>
         </HTMLFlipBook>
       </div>
 
